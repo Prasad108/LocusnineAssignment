@@ -6,6 +6,7 @@ ul {
   background-color: white;
 }
 li {
+  font-size: 14px;
   float: left;
   cursor: pointer;
   display: block;
@@ -15,7 +16,6 @@ li {
   text-decoration: none;
 }
 li.active {
-  font-size: 14px;
   color : #2196F3;
   border-bottom: 2px solid currentColor;
  }
@@ -23,6 +23,4 @@ li.active {
  li:hover {
   color : #2196F3;
   border-bottom: 2px solid currentColor;
-  padding:0px;
-  margin:0px
 }
