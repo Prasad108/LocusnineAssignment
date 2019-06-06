@@ -1,15 +1,43 @@
 #container{
     background-color: white;
 }
+
 #details {
     font-size: 24px;
     color: #231f20;
 }
-.tdStyle {
-    font-size: 12px;
-    color: #231f20;
-  }
 
-  table {
-    background-color: white;
-  }
+table {
+  background-color: white;
+}
+
+.tdWon {
+  background-color: #e6f5e6;
+}
+.tdLost{
+  background-color: #fff2f2;
+}
+
+td {
+  font-size: 12px;
+  color: #231f20;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-bottom: 1px solid #e4e8ec;
+}
+
+th {
+  font-size: 12px;
+  color: #231f20;
+  border-style: hidden;
+  border-bottom: 1px solid #e4e8ec;
+}
+table {
+ table-layout: fixed;
+  border-right: none;
+   border-left: none;
+}
+/*
+  td {
+    background-color: #f8f9fb;
+  } */

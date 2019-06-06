@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+.funnelH2{
+  font-size: 18px;
+}
+.stat2{
+  font-size: 48px;
+}
+.funnelH1{
+  font-size: 48px;
+}
+.stat1{
+  font-size: 48px;
+}
+
+
+.centered {
+  top: 50%;
+}
+
+.keepItAtCenter{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Level1 {
+  top: 8%;
+}
+.Level2 {
+  top: 20%;
+}
+
+.Level3 {
+  top: 35%;
+}
+
+.Level4 {
+  top: 48%;
+}
+
+.Level5 {
+  top: 62%;
+}
+
+.Level6 {
+  top: 76%;
+}
+

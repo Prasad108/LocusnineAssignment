@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShairedService } from 'src/app/shared/services/shaired.service';
+import { SaleDetails } from './../../shared/models/SaleDetails';
 
 @Component({
   selector: 'app-sale-details-table',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaleDetailsTableComponent implements OnInit {
 
-  constructor() { }
+  SaleDetailsList: SaleDetails[];
+  constructor(private shairedService: ShairedService) { }
 
   ngOnInit() {
+    this.shairedService.$saleDetailsList.subscribe(data => this.SaleDetailsList = data);
   }
 
 }

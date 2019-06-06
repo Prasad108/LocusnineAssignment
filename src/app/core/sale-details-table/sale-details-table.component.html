@@ -1,13 +1,13 @@
 <div id="container">
 
-      <span id="details">
+      <div id="details">
         Details
-      </span>
-  
-      <table style="width:100%" ALIGN="right">
+      </div>
+
+      <table style="width:100%" ALIGN="right" border="1" rules="rows">
         <tr>
           <th class="thStyle" ALIGN="left">Sales Rep</th>
-          <th class="thStyle" ALIGN="left">Date</th> 
+          <th class="thStyle" ALIGN="left">Date</th>
           <th class="thStyle" ALIGN="left">Client</th>
           <th class="thStyle" ALIGN="left">Primary Contact Person</th>
           <th class="thStyle" ALIGN="left">Title</th>
@@ -15,19 +15,21 @@
           <th class="thStyle" ALIGN="left">Meeting Location</th>
           <th class="thStyle" ALIGN="left">Purpose of interaction</th>
           <th class="thStyle" ALIGN="left">Outcome and Remarks</th>
+          <th class="thStyle" ALIGN="left">Engagement Status</th>
         </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td> 
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td> 
-          <td>94</td>
+        <tr *ngFor="let SaleDetails of SaleDetailsList; index as i" [ngClass]="{'tdWon': SaleDetails.EngagementStatus=='Won', 'tdLost': SaleDetails.EngagementStatus=='Lost'}">
+          <td>{{SaleDetails.SalesRep}}</td>
+          <td nowrap="nowrap"> {{SaleDetails.Date | date: 'MMM d, y'}}</td>
+          <td style="width:70px;">{{SaleDetails.Client}}</td>
+          <td>{{SaleDetails.POC}}</td>
+          <td>{{SaleDetails.Title}}</td>
+          <td>{{SaleDetails.Vertical}}</td>
+          <td>{{SaleDetails.MeetingLocation}}</td>
+          <td>{{SaleDetails.POI}}</td>
+          <td>{{SaleDetails.OutCome_Remarks}}</td>
+          <td>{{SaleDetails.EngagementStatus}}</td>
         </tr>
       </table>
-      
-  
+<div>
 </div>
 
