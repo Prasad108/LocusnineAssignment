@@ -1,0 +1,28 @@
+.statDetailsCard{
+  background-color: white;
+  width: 230px;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.statImage{
+  padding: 10px 0px 0px 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.statHeading{
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: medium;
+  text-align: right;
+  opacity: 0.5;
+}
+
+.figure{
+  font-size: 48px;
+  color: #2196f3;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 30px;
+}

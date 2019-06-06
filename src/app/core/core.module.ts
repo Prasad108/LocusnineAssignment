@@ -5,6 +5,7 @@ import { FilterByPeriodComponent } from './filter-by-period/filter-by-period.com
 import { SaleDetailsTableComponent } from './sale-details-table/sale-details-table.component';
 import { FilterBySalesRepsComponent } from './filter-by-sales-reps/filter-by-sales-reps.component';
 import { FunnelComponent } from './funnel/funnel.component';
+import { StatsSummaryComponent } from './stats-summary/stats-summary.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { FunnelComponent } from './funnel/funnel.component';
     FilterByPeriodComponent,
     SaleDetailsTableComponent,
     FilterBySalesRepsComponent,
-    FunnelComponent],
+    FunnelComponent,
+    StatsSummaryComponent],
   imports: [
     CommonModule
   ],
@@ -21,7 +23,8 @@ import { FunnelComponent } from './funnel/funnel.component';
     FilterByPeriodComponent,
     SaleDetailsTableComponent,
     FilterBySalesRepsComponent,
-    FunnelComponent
+    FunnelComponent,
+    StatsSummaryComponent
   ]
 })
 export class CoreModule { }

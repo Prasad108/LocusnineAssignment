@@ -1,11 +1,12 @@
 <div class="firstHalfContainer">
     <app-header></app-header>
     <app-filter-by-period></app-filter-by-period>
-
-
     <div>
         <app-filter-by-sales-reps style="padding:20px 40px 20px 50px"></app-filter-by-sales-reps>
-        <app-funnel></app-funnel>
+        <div class="statsContainer">
+          <app-funnel class="funnel"></app-funnel>
+          <app-stats-summary class="stats"></app-stats-summary>
+        </div>
     </div>
 </div>
 

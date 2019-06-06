@@ -1,3 +1,23 @@
 .firstHalfContainer {
   padding: 0px 80px 0px 80px;
 }
+
+.statsContainer{
+  display: table;
+  width: 100%;
+}
+
+.statsContainer, .funnel{
+  display: table-cell;
+  float: left;
+}
+
+.statsContainer, .stats{
+  float: right;
+  display: table-cell;
+}
+
+.statsContainer, .SalesRepRank{
+  float: right;
+  display: table-cell;
+}
