@@ -6,6 +6,7 @@ import { SaleDetailsTableComponent } from './sale-details-table/sale-details-tab
 import { FilterBySalesRepsComponent } from './filter-by-sales-reps/filter-by-sales-reps.component';
 import { FunnelComponent } from './funnel/funnel.component';
 import { StatsSummaryComponent } from './stats-summary/stats-summary.component';
+import { SalesRepsRankComponent } from './sales-reps-rank/sales-reps-rank.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StatsSummaryComponent } from './stats-summary/stats-summary.component';
     SaleDetailsTableComponent,
     FilterBySalesRepsComponent,
     FunnelComponent,
-    StatsSummaryComponent],
+    StatsSummaryComponent,
+    SalesRepsRankComponent],
   imports: [
     CommonModule
   ],
@@ -24,7 +26,8 @@ import { StatsSummaryComponent } from './stats-summary/stats-summary.component';
     SaleDetailsTableComponent,
     FilterBySalesRepsComponent,
     FunnelComponent,
-    StatsSummaryComponent
+    StatsSummaryComponent,
+    SalesRepsRankComponent
   ]
 })
 export class CoreModule { }

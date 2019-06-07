@@ -3,21 +3,23 @@
 }
 
 .statsContainer{
-  display: table;
   width: 100%;
+  margin: 0 auto;
 }
 
-.statsContainer, .funnel{
-  display: table-cell;
+.funnel{
+  width : 50%;
   float: left;
+  overflow: hidden;
 }
 
-.statsContainer, .stats{
-  float: right;
-  display: table-cell;
+.stats{
+  width : 40%;
+  float: left;
+  overflow: hidden;
 }
 
-.statsContainer, .SalesRepRank{
+/* .statsContainer, .SalesRepRank{
   float: right;
   display: table-cell;
-}
+} */

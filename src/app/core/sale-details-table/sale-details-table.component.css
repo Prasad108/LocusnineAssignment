@@ -1,6 +1,5 @@
 #container{
     background-color: white;
-    display:block;
 }
 
 #details {
@@ -25,6 +24,7 @@ td {
   padding-top:20px;
   padding-bottom:20px;
   border-bottom: 1px solid #e4e8ec;
+  border-top: none;
 }
 
 th {
@@ -37,6 +37,7 @@ table {
  table-layout: fixed;
   border-right: none;
    border-left: none;
+   border-top: none;
 }
 /*
   td {
