@@ -1,20 +1,31 @@
 .firstHalfContainer {
   padding: 0px 80px 0px 80px;
 }
-
-.statsContainer{
+.FilterAndSalesContainer{
   width: 100%;
   margin: 0 auto;
 }
 
+.statsContainer{
+
+  margin: 0 auto;
+  float: left;
+}
+
 .funnel{
-  width : 50%;
+  width : 68%;
   float: left;
   overflow: hidden;
 }
 
 .stats{
-  width : 40%;
+  width : 30%;
+  float: left;
+  overflow: hidden;
+}
+
+.SaleRepRank{
+
   float: left;
   overflow: hidden;
 }

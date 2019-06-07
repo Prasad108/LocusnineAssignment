@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ShairedService } from 'src/app/shared/services/shaired.service';
+import { ShairedService } from './../../shared/services/shaired.service';
 
 @Component({
-  selector: 'app-filter-by-sales-reps',
-  templateUrl: './filter-by-sales-reps.component.html',
-  styleUrls: ['./filter-by-sales-reps.component.css']
+  selector: 'app-filter-by-vertical',
+  templateUrl: './filter-by-vertical.component.html',
+  styleUrls: ['./filter-by-vertical.component.css']
 })
-export class FilterBySalesRepsComponent implements OnInit {
-  // SalesReps: String[];
+export class FilterByVerticalComponent implements OnInit {
   SalesReps = new Set();
   constructor(private shairedService: ShairedService) { }
 

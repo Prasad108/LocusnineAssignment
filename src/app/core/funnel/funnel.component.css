@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   color: #ffffff;
+  margin-top: 40px;
 }
 .FunnelImage{
   width: 400px;
@@ -36,22 +37,22 @@
   top: 8%;
 }
 .Level2 {
-  top: 20%;
+  top: 23%;
 }
 
 .Level3 {
-  top: 35%;
+  top: 38%;
 }
 
 .Level4 {
-  top: 48%;
+  top: 53%;
 }
 
 .Level5 {
-  top: 62%;
+  top: 68%;
 }
 
 .Level6 {
-  top: 76%;
+  top: 85%;
 }
 

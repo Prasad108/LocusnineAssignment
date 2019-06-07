@@ -2,12 +2,14 @@
     <app-header></app-header>
     <app-filter-by-period></app-filter-by-period>
     <div>
-        <app-filter-by-sales-reps style="padding:20px 40px 20px 50px"></app-filter-by-sales-reps>
-        <app-sales-reps-rank></app-sales-reps-rank>
-        <div class="statsContainer">
-            <app-funnel class="funnel"></app-funnel>
-            <app-stats-summary class="stats"></app-stats-summary>
+        <div class="FilterAndSalesContainer">
+          <div class="statsContainer">
+              <app-filter-by-vertical style="padding:20px 40px 20px 50px"></app-filter-by-vertical>
+              <app-funnel class="funnel"></app-funnel>
+              <app-stats-summary class="stats"></app-stats-summary>
+            </div>
           </div>
+          <app-sales-reps-rank class="SaleRepRank"></app-sales-reps-rank>
     </div>
 </div>
 <div>

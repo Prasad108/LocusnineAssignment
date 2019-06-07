@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FilterBySalesRepsComponent } from './filter-by-sales-reps.component';
+import { FilterByVerticalComponent } from './filter-by-vertical.component';
 
-describe('FilterBySalesRepsComponent', () => {
-  let component: FilterBySalesRepsComponent;
-  let fixture: ComponentFixture<FilterBySalesRepsComponent>;
+describe('FilterByVerticalComponent', () => {
+  let component: FilterByVerticalComponent;
+  let fixture: ComponentFixture<FilterByVerticalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FilterBySalesRepsComponent ]
+      declarations: [ FilterByVerticalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FilterBySalesRepsComponent);
+    fixture = TestBed.createComponent(FilterByVerticalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

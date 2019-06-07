@@ -1,3 +1,7 @@
+.container{
+  margin-top: 25px;
+  margin-left: 50px;
+}
 .statDetailsCard{
   background-color: white;
   width: 230px;
@@ -20,7 +24,7 @@
 }
 
 .IncRevenue{
-  color: red;
+  /* color: red; */
 }
 
 .figure{

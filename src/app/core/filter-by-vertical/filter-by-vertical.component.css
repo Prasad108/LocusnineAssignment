@@ -1,6 +1,7 @@
 #container{
   background-color: white;
   height: 50px;
+  margin-right: 40px;
 }
 option {
   font-size: 14px;
