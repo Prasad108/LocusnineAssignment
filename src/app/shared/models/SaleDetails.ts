@@ -2,7 +2,7 @@ export class SaleDetails {
     constructor(
         public id?: string,
         public SalesRep?: string,
-        public Date?: string,
+        public meetingDate?: string,
         public Client?: string,
         public POC?: string,
         public Title?: string,

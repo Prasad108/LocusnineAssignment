@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShairedService } from './../../shared/services/shaired.service';
+import { DistinctVerticalsService } from './../../shared/services/distinct-verticals.service';
+
 
 @Component({
   selector: 'app-filter-by-vertical',
@@ -7,15 +9,15 @@ import { ShairedService } from './../../shared/services/shaired.service';
   styleUrls: ['./filter-by-vertical.component.css']
 })
 export class FilterByVerticalComponent implements OnInit {
-  SalesReps = new Set();
-  constructor(private shairedService: ShairedService) { }
+  Verticals:  String[] = [];
+  constructor(private shairedService: ShairedService,
+    private distinctVerticalsService: DistinctVerticalsService) { }
 
   ngOnInit() {
-    this.shairedService.$saleDetailsList.subscribe(data => {
-      this.SalesReps.clear();
-   data.forEach(sale => {
-    this.SalesReps.add(sale.SalesRep);
-   });
+    this.distinctVerticalsService.getDistinctVerticals().subscribe(data => {
+      data.forEach(Vertical => {
+        this.Verticals.push(Vertical);
+      });
     });
   }
 

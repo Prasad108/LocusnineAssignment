@@ -19,7 +19,7 @@
         </tr>
         <tr *ngFor="let SaleDetails of SaleDetailsList; index as i" [ngClass]="{'tdWon': SaleDetails.EngagementStatus=='Won', 'tdLost': SaleDetails.EngagementStatus=='Lost'}">
           <td>{{SaleDetails.SalesRep}}</td>
-          <td nowrap="nowrap"> {{SaleDetails.Date | date: 'MMM d, y'}}</td>
+          <td nowrap="nowrap"> {{SaleDetails.meetingDate | date: 'MMM d, y'}}</td>
           <td style="width:70px;">{{SaleDetails.Client}}</td>
           <td>{{SaleDetails.POC}}</td>
           <td>{{SaleDetails.Title}}</td>
