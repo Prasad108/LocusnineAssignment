@@ -1,9 +1,9 @@
 <div>
   <ul>
-    <li class="active">TODAY</li>
-    <li>LAST WEEK</li>
-    <li>LAST MONTH</li>
-    <li>THIS QUARTER</li>
-    <li>THIS YEAR</li>
+    <li *ngFor="let period of dateFilters; let i = index" class="active"
+     [class.active]="selectedIndex === i"
+    (click)="ChangeDateFilter(i,period)">
+      {{period}}
+    </li>
   </ul>
 </div>

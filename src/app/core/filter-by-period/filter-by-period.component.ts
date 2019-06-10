@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterByPeriodComponent implements OnInit {
 
+  dateFilters: String[] = ['TODAY', 'LAST WEEK', 'LAST MONTH', 'THIS QUARTER', 'THIS YEAR'];
+  selectedIndex = 0;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public ChangeDateFilter(index: number, period: String) {
+    this.selectedIndex = index;
   }
 
 }
