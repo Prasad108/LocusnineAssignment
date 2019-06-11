@@ -43,11 +43,16 @@ export class SalesRepsRankComponent implements OnInit {
         }
       });
 
+      this.saleRepList.sort((a, b) => {
+        return b.newMMR - a.newMMR;
+      });
+
     });
   }
 
   ChangeOrder(index: number, order: String) {
     this.selectedIndex =  index;
+    this.saleRepList.reverse();
   }
 
 }
