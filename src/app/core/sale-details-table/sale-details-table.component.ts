@@ -13,6 +13,7 @@ export class SaleDetailsTableComponent implements OnInit {
   constructor(private shairedService: ShairedService) { }
 
   ngOnInit() {
+    // whenever saleDetailsList list is updated re-render table
     this.shairedService.$saleDetailsList.subscribe(data => this.SaleDetailsList = data);
   }
 

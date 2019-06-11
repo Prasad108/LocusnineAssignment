@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { SaleDetailsWrapper } from '../models/SaleDetailsWrapper';
 import { AppSettings } from 'src/app/appSettings';
 
 @Injectable({

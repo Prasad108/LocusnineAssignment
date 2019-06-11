@@ -17,6 +17,8 @@ export class SalesRepsRankComponent implements OnInit {
   constructor(private shairedService: ShairedService) { }
 
   ngOnInit() {
+
+    // whenever saleDetailsList list is updated compute this
     this.shairedService.$saleDetailsList.subscribe(sales => {
       this.saleRepList = [];
       sales.forEach(sale => {

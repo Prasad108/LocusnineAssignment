@@ -17,7 +17,5 @@ export class SaleDetails {
         public incrementedRevenue?: number,
         public NewMMR?: number,
         public NewLogo?: number
-
-
       ) {}
 }

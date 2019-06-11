@@ -16,6 +16,7 @@ export class StatsSummaryComponent implements OnInit {
   constructor(private shairedService: ShairedService) { }
 
   ngOnInit() {
+    // whenever saleDetailsList list is updated compute this
     this.shairedService.$saleDetailsList.subscribe(Sales => {
       this.callsMade = 0;
       this.callsRecieved = 0;

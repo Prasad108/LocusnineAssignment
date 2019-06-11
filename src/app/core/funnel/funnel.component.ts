@@ -20,6 +20,7 @@ export class FunnelComponent implements OnInit {
   constructor(private shairedService: ShairedService) { }
 
   ngOnInit() {
+    // whenever saleDetailsList list is updated compute this
     this.shairedService.$saleDetailsList.subscribe(data  => {
       const saleDetailsList = this.shairedService.saleDetailsList;
       this.leadIn = 0;
