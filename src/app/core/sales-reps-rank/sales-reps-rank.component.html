@@ -6,39 +6,21 @@
       >{{order}}</li>
     </ul>
   </div>
-
-  <div>
-    <div class="SalesRepCard firstCard">
+  <div> <div *ngFor="let representative of saleRepList; let i = index">
+    <div class="SalesRepCard"
+    [ngClass]="{'firstCard': (i===0  && selectedIndex === 0) || (i===2  && selectedIndex === 1), 'secondCard': i===1 ,
+    'thirdCard': (i===2 && selectedIndex ===0) ||i===0 && selectedIndex === 1}">
         <!-- <img class="FunnelImage" src="assets/images/winner.png" alt="Snow" style="width:100%;"> -->
       <div class="cardName">
-          John Doe
       </div>
-      <div class="cardContent">
-          <div>
-              <div><div class="cardSubHeading">New MMR</div> <div class="cardSubHeadingContent">3500</div></div>
-              <div class="cardSubHeading">New logos</div> <div class="cardSubHeadingContent">82</div>
-              <div class="cardSubHeading">Demo Calls</div> <div class="cardSubHeadingContent">10</div>
-            </div>
-      </div>
-    </div>
-    <div class="SalesRepCard secondCard">
-        <div class="cardName">
-            Jane Smith
-        </div>
-        <div>
-            <div><div class="cardSubHeading">New MMR</div> <div class="cardSubHeadingContent">3500</div></div>
-            <div class="cardSubHeading">New logos</div> <div class="cardSubHeadingContent">82</div>
-            <div class="cardSubHeading">Demo Calls</div> <div class="cardSubHeadingContent">10</div>
+
+          <div class="cardContent">
+              <div>
+                  <div><div class="cardSubHeading">New MMR</div> <div class="cardSubHeadingContent">{{representative.newMMR}}</div></div>
+                  <div class="cardSubHeading">New logos</div> <div class="cardSubHeadingContent">{{representative.newLogo}}</div>
+                  <div class="cardSubHeading">Demo Calls</div> <div class="cardSubHeadingContent">{{representative.demoCalls}}</div>
+                </div>
           </div>
-    </div>
-    <div class="SalesRepCard thirdCard">
-        <div class="cardName">
-            Ethan Hunt
-        </div>
-        <div>
-          <div><div class="cardSubHeading">New MMR</div> <div class="cardSubHeadingContent">3500</div></div>
-          <div class="cardSubHeading">New logos</div> <div class="cardSubHeadingContent">82</div>
-          <div class="cardSubHeading">Demo Calls</div> <div class="cardSubHeadingContent">10</div>
+
         </div>
     </div>
-  </div>

@@ -30,6 +30,9 @@ export class AppComponent implements OnInit {
 
   getFilteredSales() {
     this.filteredSalesService.getFilteredSales(this.shairedService.dateFilter, this.shairedService.vectorFilter)
-    .subscribe(data => this.shairedService.updateSaleDetailsList(data.Items));
+    .subscribe(data => {
+      this.shairedService.updateSaleDetailsList(data.Items);
+    }
+    );
   }
 }

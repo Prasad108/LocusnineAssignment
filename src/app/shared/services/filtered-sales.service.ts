@@ -9,12 +9,12 @@ import { AppSettings } from 'src/app/appSettings';
 })
 export class FilteredSalesService {
 
-  private getFilteredSaleService_URL = 'https://a4f1v6cts9.execute-api.us-east-1.amazonaws.com/prod/filter-by-date-and-vertical';
+  private getFilteredSaleService_URL = 'https://a4f1v6cts9.execute-api.us-east-1.amazonaws.com/prod/filter-by-period-and-vertical';
 
   constructor(private http: HttpClient) { }
 
   public getFilteredSales(period: String, vertical: String): Observable<SaleDetailsWrapper> {
-    const url = encodeURI(this.getFilteredSaleService_URL + '?dateFilter=' + period + '&=verticalFilter=' + vertical);
+    const url = encodeURI(this.getFilteredSaleService_URL + '?dateFilter=' + period + '&verticalFilter=' + vertical);
     return this.http.get<SaleDetailsWrapper>(url, AppSettings.HTTP_OPTIONS);
   }
 

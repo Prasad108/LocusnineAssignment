@@ -23,9 +23,12 @@ export class FilterByPeriodComponent implements OnInit {
        'value': 'this_quarter'    },
     {
        'name': 'THIS YEAR',
-       'value': 'this_year'    }
+       'value': 'this_year'    },
+    {
+        'name': 'ALL',
+        'value': 'all'        }
   ];
-  selectedIndex = 4;
+  selectedIndex = 5;
   constructor(private shairedService: ShairedService) { }
 
   ngOnInit() {
