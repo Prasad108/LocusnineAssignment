@@ -29,6 +29,7 @@
 
   float: left;
   overflow: hidden;
+  margin-left: 10px;
 }
 
 /* .statsContainer, .SalesRepRank{
