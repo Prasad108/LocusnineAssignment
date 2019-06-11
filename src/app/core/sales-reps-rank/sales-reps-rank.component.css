@@ -28,6 +28,7 @@ li.active {
   border-bottom: 2px solid currentColor;
  }
 
+
  li:hover {
   color : #2196F3;
   border-bottom: 2px solid currentColor;

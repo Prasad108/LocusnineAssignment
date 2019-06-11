@@ -13,9 +13,9 @@ export class FilteredSalesService {
 
   constructor(private http: HttpClient) { }
 
-  public getDistinctVerticals(period: String, vertical: String): Observable<SaleDetailsWrapper> {
-    const url = this.getFilteredSaleService_URL + '?dateFilter=' + period + '&=verticalFilter=' + vertical;
-    return this.http.get<SaleDetailsWrapper>(encodeURI(url), AppSettings.HTTP_OPTIONS);
+  public getFilteredSales(period: String, vertical: String): Observable<SaleDetailsWrapper> {
+    const url = encodeURI(this.getFilteredSaleService_URL + '?dateFilter=' + period + '&=verticalFilter=' + vertical);
+    return this.http.get<SaleDetailsWrapper>(url, AppSettings.HTTP_OPTIONS);
   }
 
 }

@@ -1,8 +1,8 @@
 <div id="container">
     <div style="padding:0px 0px 0px 20px">
-      <select >
-          <option value="default">All Sales Reps</option>
-          <option *ngFor="let vertical of Verticals" >
+      <select  #t (change)="onChange($event.target.value)">
+          <option value="all">All Sales Reps</option>
+          <option *ngFor="let vertical of Verticals" [value]="vertical">
               {{vertical}}
           </option>
         </select>

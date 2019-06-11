@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalesRepsRankComponent implements OnInit {
 
+  orderFilters = ['TOP', 'BOTTOM'];
+  selectedIndex = 0;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ChangeOrder(index: number, order: String) {
+    this.selectedIndex =  index;
   }
 
 }

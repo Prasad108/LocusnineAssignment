@@ -1,7 +1,9 @@
 <div class="container" >
     <ul>
-      <li class="active">TOP</li>
-      <li>BOTTOM</li>
+      <li *ngFor="let order of orderFilters; let i = index" class="active"
+      [class.active]="selectedIndex === i"
+     (click)="ChangeOrder(i,order)"
+      >{{order}}</li>
     </ul>
   </div>
 

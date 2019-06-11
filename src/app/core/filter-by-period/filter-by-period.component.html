@@ -2,8 +2,8 @@
   <ul>
     <li *ngFor="let period of dateFilters; let i = index" class="active"
      [class.active]="selectedIndex === i"
-    (click)="ChangeDateFilter(i,period)">
-      {{period}}
+    (click)="ChangeDateFilter(i,period.value)">
+      {{period.name}}
     </li>
   </ul>
 </div>

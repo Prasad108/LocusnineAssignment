@@ -20,5 +20,8 @@ export class FilterByVerticalComponent implements OnInit {
       });
     });
   }
+  onChange(vertical: any) {
+    this.shairedService.$vectorFilter.next(vertical);
+  }
 
 }
