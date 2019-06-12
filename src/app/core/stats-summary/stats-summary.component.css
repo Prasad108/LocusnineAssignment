@@ -1,12 +1,13 @@
 .container{
   margin-top: 25px;
+  margin-left: 45px;
 }
 .statDetailsCard{
   background-color: white;
   width: 230px;
   height: 150px;
   margin-bottom: 40px;
-  margin-left: 60px
+  /* margin-left: 25px; */
 }
 
 .statImage{

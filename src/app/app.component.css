@@ -8,26 +8,26 @@
 }
 
 .statsContainer{
-  width: 81%;
+  width: 79%;
   margin: 0 auto;
   float: left;
 }
 
-.funnel{
-  width : 68%;
-  float: left;
-  overflow: hidden;
-}
+        .funnel{
+          width : 68%;
+          float: left;
+          overflow: hidden;
+        }
 
-.stats{
-  width : 30%;
-  float: left;
-  overflow: hidden;
-}
+        .stats{
+          width : 30%;
+          float: left;
+          overflow: hidden;
+        }
 
 .SaleRepRank{
-
+  width : 19%;
   float: left;
   overflow: hidden;
-  margin-left: 10px;
+  margin-left: 20px;
 }
