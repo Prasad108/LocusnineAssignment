@@ -24,6 +24,7 @@
 
 ## Important Files
  - All the lambda functions are kept in the 
+  ```
     .
     ├── src                                      
           ├── assets                             
@@ -31,3 +32,4 @@
                 ├── FilterByPeriodAndVertical.js  # Filter sales by Verticals and Period Lambda
                 ├── getDistinctVerticals.js       # Lambda for distinct verticals
                 └── Sales.json                    # sample json records from dynamodb
+ ```
