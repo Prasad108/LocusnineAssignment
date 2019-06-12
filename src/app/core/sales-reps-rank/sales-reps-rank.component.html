@@ -1,30 +1,30 @@
 <div class="container" [hidden]="!(saleRepList && saleRepList.length > 0)">
-  <div>
-    <ul>
-      <li *ngFor="let order of orderFilters; let i = index" class="active"
-          [class.active]="selectedIndex === i" (click)="ChangeOrder(i,order)">
-          {{order}}
-      </li>
-    </ul>
-  </div>
-  <div> <div *ngFor="let representative of saleRepList; let i = index">
-    <div class="SalesRepCard"
-        [ngClass]="{'firstCard': (i===0  && selectedIndex === 0) || (i===2  && selectedIndex === 1),
-        'secondCard': i===1 ,'thirdCard': (i===2 && selectedIndex ===0) ||i===0 && selectedIndex === 1}">
+    <div>
+      <ul>
+        <li *ngFor="let order of orderFilters; let i = index" class="active"
+            [class.active]="selectedIndex === i" (click)="ChangeOrder(i,order)">
+            {{order}}
+        </li>
+      </ul>
     </div>
-    
-      <div class="cardName">
-        {{representative.name}}
-      </div>
+  
+    <div *ngFor="let representative of saleRepList; let i = index">
+          <div class="SalesRepCard" *ngIf="i < 3"
+              [ngClass]="{'firstCard': (i===0  && selectedIndex === 0) || (i===2  && selectedIndex === 1),
+              'secondCard': i===1 ,'thirdCard': (i===2 && selectedIndex ===0) ||i===0 && selectedIndex === 1}">
+
+          <div class="cardName">
+            {{representative.name}}
+          </div>
 
           <div class="cardContent">
               <div>
-                  <div><div class="cardSubHeading">New MMR</div> <div class="cardSubHeadingContent">{{representative.newMMR}}</div></div>
+                  <div class="cardSubHeading">New MMR</div> <div class="cardSubHeadingContent">{{representative.newMMR}}</div>
                   <div class="cardSubHeading">New logos</div> <div class="cardSubHeadingContent">{{representative.newLogo}}</div>
                   <div class="cardSubHeading">Demo Calls</div> <div class="cardSubHeadingContent">{{representative.demoCalls}}</div>
-                </div>
+              </div>
           </div>
-
         </div>
     </div>
 </div>
+
